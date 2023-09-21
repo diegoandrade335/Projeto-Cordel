@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+font-family: 'Sriracha', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+font-family: 'Passion One', cursive;
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', cursive;
+    --fonte3:  'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+html, body{
+    font-family: var(--fonte1);
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 7vw;  /*10% da largura da tela*/
+}
+
+header > p{
+    padding-bottom: 50px;
+}   
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+section{
+    /* criando espaço parallax*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*espaçamento duplo entre as frases*/
+    padding-left: 30px ; /*espaçamento lateral do canto da página*/
+    font-family: var(--fonte3);
+    font-size: 4vw;
+    
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: rgb(14, 14, 14);
+}
+
+
+section.imagem{
+    background-color: rgb(2, 2, 2);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.726);
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    background-color: rgba(14, 13, 13, 0.678);
+    display: inline-block;  /*cria uma caixa que se adapta ao tamanho do conteudo*/
+    padding: 5px;
+    
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: center center;
+    background-size: cover;
+
+
+}
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
